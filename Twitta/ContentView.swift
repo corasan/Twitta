@@ -7,10 +7,30 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+
+struct Tweet {
+    var content: String?
+}
 
 struct ContentView: View {
+    init() {
+        Twitt.subscribe()
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .leading) {
+            Text("Article Title")
+                .font(.title)
+            HStack {
+                Text("By Henry Paulino")
+                    .font(.subheadline)
+                Spacer()
+                Text("2/14/20")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
