@@ -9,16 +9,24 @@
 import Foundation
 import FirebaseFirestore
 
-class Twitt {
-    static func subscribe() {
+struct TwittType: Identifiable {
+    let id, content: String
+}
+
+class Twitt: ObservableObject {
+    @Published var data = [TwittType]()
+    
+    init() {
         let db = Firestore.firestore()
-        db.collection("Twitt").addSnapshotListener { (snapshot, err) in
+        db.collection("Twitts").addSnapshotListener { (snapshot, err) in
             if err != nil {
                 print("Error fetching Twitts: \(err!)")
             }
-            
+
             for el in (snapshot?.documentChanges)! {
-                print("Data: \(el.document.data())")
+                let doc = el.document.data()
+                let newTwitt = TwittType(id: doc["id"] as! String, content: doc["content"] as! String)
+                self.data.append(newTwitt)
             }
         }
     }

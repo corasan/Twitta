@@ -9,33 +9,48 @@
 import SwiftUI
 import FirebaseFirestore
 
-struct Tweet {
-    var content: String?
-}
-
 struct ContentView: View {
+    @EnvironmentObject var twitts: Twitt
+    @State var show = true
+    
     init() {
-        Twitt.subscribe()
+        UINavigationBar.appearance().backgroundColor = UIColor(red:0.08, green:0.13, blue:0.17, alpha:1.0)
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        UITableView.appearance().backgroundColor = UIColor(red:0.08, green:0.13, blue:0.17, alpha:1.0)
+        UITableViewCell.appearance().backgroundColor = UIColor(red:0.08, green:0.13, blue:0.17, alpha:1.0)
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Article Title")
-                .font(.title)
-            HStack {
-                Text("By Henry Paulino")
-                    .font(.subheadline)
-                Spacer()
-                Text("2/14/20")
-                    .font(.subheadline)
+        NavigationView {
+            ZStack{
+                List(self.twitts.data) { el in
+                    TwittCell(content: el.content)
+                }
+                .navigationBarTitle("Twitts")
+                .foregroundColor(.white)
             }
         }
-        .padding()
+    }
+}
+
+struct TwittCell: View {
+    @State var content: String!
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Henry")
+                    .fontWeight(.heavy)
+                Text("@corasan")
+            }
+            Spacer(minLength: 10)
+            Text(content)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(Twitt())
     }
 }
