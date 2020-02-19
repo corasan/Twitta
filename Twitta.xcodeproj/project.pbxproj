@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AB46DC1D21CD1871618A241F /* Pods_TwittaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B06C818BE3B215BFEF24897 /* Pods_TwittaTests.framework */; };
+		BA015DAF23FCE4E700DD84D1 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA015DAE23FCE4E700DD84D1 /* FloatingButton.swift */; };
+		BA015DB223FCE9DD00DD84D1 /* CreateTwitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */; };
 		BA20647123F7D11A009DF273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA20647023F7D11A009DF273 /* GoogleService-Info.plist */; };
 		BA20647323F7E12F009DF273 /* Twitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20647223F7E12F009DF273 /* Twitt.swift */; };
+		BA33BCB323FD26FF00B4DE2B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33BCB223FD26FF00B4DE2B /* TextView.swift */; };
 		BAC4EFE823F7B69200DE5A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFE723F7B69200DE5A1B /* AppDelegate.swift */; };
 		BAC4EFEA23F7B69200DE5A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFE923F7B69200DE5A1B /* SceneDelegate.swift */; };
 		BAC4EFEC23F7B69200DE5A1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFEB23F7B69200DE5A1B /* ContentView.swift */; };
@@ -47,8 +50,11 @@
 		6C80C78B6F73F0701C49F0B8 /* Pods-Twitta-TwittaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitta-TwittaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Twitta-TwittaUITests/Pods-Twitta-TwittaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F580E347DD41AE38385B7F /* Pods-TwittaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwittaTests.release.xcconfig"; path = "Target Support Files/Pods-TwittaTests/Pods-TwittaTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8DFC2BEC3CE66A0E6E3789F /* Pods-Twitta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitta.release.xcconfig"; path = "Target Support Files/Pods-Twitta/Pods-Twitta.release.xcconfig"; sourceTree = "<group>"; };
+		BA015DAE23FCE4E700DD84D1 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTwitt.swift; sourceTree = "<group>"; };
 		BA20647023F7D11A009DF273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA20647223F7E12F009DF273 /* Twitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitt.swift; sourceTree = "<group>"; };
+		BA33BCB223FD26FF00B4DE2B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		BAC4EFE423F7B69200DE5A1B /* Twitta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC4EFE723F7B69200DE5A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC4EFE923F7B69200DE5A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA015DB023FCE9C500DD84D1 /* CreateTwitt */ = {
+			isa = PBXGroup;
+			children = (
+				BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */,
+			);
+			path = CreateTwitt;
+			sourceTree = "<group>";
+		};
+		BA33BCB523FD31F700B4DE2B /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BA015DAE23FCE4E700DD84D1 /* FloatingButton.swift */,
+				BA33BCB223FD26FF00B4DE2B /* TextView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		BAC4EFDB23F7B69200DE5A1B = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +153,8 @@
 		BAC4EFE623F7B69200DE5A1B /* Twitta */ = {
 			isa = PBXGroup;
 			children = (
+				BA33BCB523FD31F700B4DE2B /* UIComponents */,
+				BA015DB023FCE9C500DD84D1 /* CreateTwitt */,
 				BA20647023F7D11A009DF273 /* GoogleService-Info.plist */,
 				BAC4EFE723F7B69200DE5A1B /* AppDelegate.swift */,
 				BAC4EFE923F7B69200DE5A1B /* SceneDelegate.swift */,
@@ -422,8 +447,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA33BCB323FD26FF00B4DE2B /* TextView.swift in Sources */,
+				BA015DB223FCE9DD00DD84D1 /* CreateTwitt.swift in Sources */,
 				BAC4EFE823F7B69200DE5A1B /* AppDelegate.swift in Sources */,
 				BAC4EFEA23F7B69200DE5A1B /* SceneDelegate.swift in Sources */,
+				BA015DAF23FCE4E700DD84D1 /* FloatingButton.swift in Sources */,
 				BA20647323F7E12F009DF273 /* Twitt.swift in Sources */,
 				BAC4EFEC23F7B69200DE5A1B /* ContentView.swift in Sources */,
 			);
