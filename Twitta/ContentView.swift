@@ -22,12 +22,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ZStack{
+            ZStack {
                 List(self.twitts.data) { el in
                     TwittCell(content: el.content)
                 }
                 .navigationBarTitle("Twitts")
                 .foregroundColor(.white)
+                
+                FloatingButton()
             }
         }
     }
@@ -42,6 +44,9 @@ struct TwittCell: View {
                 Text("Henry")
                     .fontWeight(.heavy)
                 Text("@corasan")
+                    .foregroundColor(.gray)
+                Text("• 6h")
+                    .foregroundColor(.gray)
             }
             Spacer(minLength: 10)
             Text(content)
