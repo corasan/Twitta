@@ -28,6 +28,7 @@ struct ContentView: View {
                 }
                 .navigationBarTitle("Twitts")
                 .foregroundColor(.white)
+                .listStyle(GroupedListStyle())
                 
                 FloatingButton()
             }
@@ -45,12 +46,14 @@ struct TwittCell: View {
                     .fontWeight(.heavy)
                 Text("@corasan")
                     .foregroundColor(.gray)
+                Spacer()
                 Text("• 6h")
                     .foregroundColor(.gray)
             }
             Spacer(minLength: 10)
             Text(content)
         }
+        .padding([.top, .bottom], 6)
     }
 }
 
