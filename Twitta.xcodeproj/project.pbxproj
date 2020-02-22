@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		AB46DC1D21CD1871618A241F /* Pods_TwittaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B06C818BE3B215BFEF24897 /* Pods_TwittaTests.framework */; };
 		BA015DAF23FCE4E700DD84D1 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA015DAE23FCE4E700DD84D1 /* FloatingButton.swift */; };
-		BA015DB223FCE9DD00DD84D1 /* CreateTwitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */; };
+		BA015DB223FCE9DD00DD84D1 /* CreateTwittView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA015DB123FCE9DD00DD84D1 /* CreateTwittView.swift */; };
 		BA20647123F7D11A009DF273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA20647023F7D11A009DF273 /* GoogleService-Info.plist */; };
 		BA20647323F7E12F009DF273 /* Twitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20647223F7E12F009DF273 /* Twitt.swift */; };
 		BA33BCB323FD26FF00B4DE2B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33BCB223FD26FF00B4DE2B /* TextView.swift */; };
+		BA72387123FE5DE400DAAC7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA72387023FE5DE400DAAC7C /* LoginView.swift */; };
+		BABFE3A323FFC7EB0054463E /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFE3A223FFC7EB0054463E /* AppleSignIn.swift */; };
+		BABFE3A523FFCAC40054463E /* AppleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFE3A423FFCAC40054463E /* AppleSignInController.swift */; };
 		BAC4EFE823F7B69200DE5A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFE723F7B69200DE5A1B /* AppDelegate.swift */; };
 		BAC4EFEA23F7B69200DE5A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFE923F7B69200DE5A1B /* SceneDelegate.swift */; };
 		BAC4EFEC23F7B69200DE5A1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFEB23F7B69200DE5A1B /* ContentView.swift */; };
@@ -21,6 +24,7 @@
 		BAC4EFF423F7B69500DE5A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC4EFF223F7B69500DE5A1B /* LaunchScreen.storyboard */; };
 		BAC4EFFF23F7B69500DE5A1B /* TwittaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4EFFE23F7B69500DE5A1B /* TwittaTests.swift */; };
 		BAC4F00A23F7B69500DE5A1B /* TwittaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4F00923F7B69500DE5A1B /* TwittaUITests.swift */; };
+		BAD009FE2400D0890064D322 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD009FD2400D0890064D322 /* AppleSignInCoordinator.swift */; };
 		DD105C96A4B9C378C474030C /* Pods_Twitta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B1EAF2EFE633EB8C72CDFF /* Pods_Twitta.framework */; };
 		FFB25D3F51CF58A280179C40 /* Pods_Twitta_TwittaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8C05BA0401D41129761E19 /* Pods_Twitta_TwittaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,10 +55,14 @@
 		A6F580E347DD41AE38385B7F /* Pods-TwittaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwittaTests.release.xcconfig"; path = "Target Support Files/Pods-TwittaTests/Pods-TwittaTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8DFC2BEC3CE66A0E6E3789F /* Pods-Twitta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitta.release.xcconfig"; path = "Target Support Files/Pods-Twitta/Pods-Twitta.release.xcconfig"; sourceTree = "<group>"; };
 		BA015DAE23FCE4E700DD84D1 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
-		BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTwitt.swift; sourceTree = "<group>"; };
+		BA015DB123FCE9DD00DD84D1 /* CreateTwittView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTwittView.swift; sourceTree = "<group>"; };
 		BA20647023F7D11A009DF273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA20647223F7E12F009DF273 /* Twitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitt.swift; sourceTree = "<group>"; };
 		BA33BCB223FD26FF00B4DE2B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		BA72387023FE5DE400DAAC7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA72387223FE610400DAAC7C /* Twitta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Twitta.entitlements; sourceTree = "<group>"; };
+		BABFE3A223FFC7EB0054463E /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		BABFE3A423FFCAC40054463E /* AppleSignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
 		BAC4EFE423F7B69200DE5A1B /* Twitta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC4EFE723F7B69200DE5A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC4EFE923F7B69200DE5A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,7 @@
 		BAC4F00523F7B69500DE5A1B /* TwittaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwittaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC4F00923F7B69500DE5A1B /* TwittaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittaUITests.swift; sourceTree = "<group>"; };
 		BAC4F00B23F7B69500DE5A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD009FD2400D0890064D322 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
 		DCE5DD35B9236F26949D523B /* Pods-TwittaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwittaTests.debug.xcconfig"; path = "Target Support Files/Pods-TwittaTests/Pods-TwittaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0E928C57B71189713AB4EF /* Pods-Twitta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitta.debug.xcconfig"; path = "Target Support Files/Pods-Twitta/Pods-Twitta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +123,7 @@
 		BA015DB023FCE9C500DD84D1 /* CreateTwitt */ = {
 			isa = PBXGroup;
 			children = (
-				BA015DB123FCE9DD00DD84D1 /* CreateTwitt.swift */,
+				BA015DB123FCE9DD00DD84D1 /* CreateTwittView.swift */,
 			);
 			path = CreateTwitt;
 			sourceTree = "<group>";
@@ -126,6 +135,24 @@
 				BA33BCB223FD26FF00B4DE2B /* TextView.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		BA72387323FE66BC00DAAC7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BA72387023FE5DE400DAAC7C /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BABFE39F23FFB65D0054463E /* SignInWithApple */ = {
+			isa = PBXGroup;
+			children = (
+				BABFE3A223FFC7EB0054463E /* AppleSignIn.swift */,
+				BABFE3A423FFCAC40054463E /* AppleSignInController.swift */,
+				BAD009FD2400D0890064D322 /* AppleSignInCoordinator.swift */,
+			);
+			path = SignInWithApple;
 			sourceTree = "<group>";
 		};
 		BAC4EFDB23F7B69200DE5A1B = {
@@ -153,6 +180,9 @@
 		BAC4EFE623F7B69200DE5A1B /* Twitta */ = {
 			isa = PBXGroup;
 			children = (
+				BABFE39F23FFB65D0054463E /* SignInWithApple */,
+				BA72387323FE66BC00DAAC7C /* Login */,
+				BA72387223FE610400DAAC7C /* Twitta.entitlements */,
 				BA33BCB523FD31F700B4DE2B /* UIComponents */,
 				BA015DB023FCE9C500DD84D1 /* CreateTwitt */,
 				BA20647023F7D11A009DF273 /* GoogleService-Info.plist */,
@@ -447,13 +477,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABFE3A323FFC7EB0054463E /* AppleSignIn.swift in Sources */,
 				BA33BCB323FD26FF00B4DE2B /* TextView.swift in Sources */,
-				BA015DB223FCE9DD00DD84D1 /* CreateTwitt.swift in Sources */,
+				BA015DB223FCE9DD00DD84D1 /* CreateTwittView.swift in Sources */,
 				BAC4EFE823F7B69200DE5A1B /* AppDelegate.swift in Sources */,
 				BAC4EFEA23F7B69200DE5A1B /* SceneDelegate.swift in Sources */,
 				BA015DAF23FCE4E700DD84D1 /* FloatingButton.swift in Sources */,
 				BA20647323F7E12F009DF273 /* Twitt.swift in Sources */,
 				BAC4EFEC23F7B69200DE5A1B /* ContentView.swift in Sources */,
+				BABFE3A523FFCAC40054463E /* AppleSignInController.swift in Sources */,
+				BAD009FE2400D0890064D322 /* AppleSignInCoordinator.swift in Sources */,
+				BA72387123FE5DE400DAAC7C /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +653,7 @@
 			baseConfigurationReference = EF0E928C57B71189713AB4EF /* Pods-Twitta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Twitta/Twitta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitta/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
@@ -641,6 +676,7 @@
 			baseConfigurationReference = B8DFC2BEC3CE66A0E6E3789F /* Pods-Twitta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Twitta/Twitta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitta/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;

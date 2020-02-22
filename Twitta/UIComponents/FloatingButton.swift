@@ -31,7 +31,7 @@ struct FloatingButton: View {
                         .padding(.trailing, 20)
                         .shadow(color: Color.black.opacity(0.8), radius: 4, x: 0, y: 1)
                         .sheet(isPresented: self.$showModal) {
-                            CreateTwitt()
+                            CreateTwittView()
                         }
                 }
             }
