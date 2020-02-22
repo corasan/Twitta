@@ -9,7 +9,7 @@
 import SwiftUI
 import FirebaseFirestore
 
-struct CreateTwitt: View {
+struct CreateTwittView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var twittText: String = ""
     @State var buttonDisabled: Bool = true
@@ -66,8 +66,8 @@ struct CreateTwitt: View {
     }
 }
 
-struct CreateTwitt_Previews: PreviewProvider {
+struct CreateTwittView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateTwitt()
+        CreateTwittView()
     }
 }
